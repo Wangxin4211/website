@@ -3,27 +3,21 @@
 <head>
     <title>汉诺塔七层</title>
     <script>
-        var count = 0; // 运行次数
-
+        var count = 0; 
         function hanoiTower(n, source, auxiliary, target) {
             if (n > 0) {
-                // 将 n-1 个盘子从源柱移动到辅助柱
                 hanoiTower(n - 1, source, target, auxiliary);
-                
-                // 将第 n 个盘子从源柱移动到目标柱
                 document.write("将盘子 " + n + " 从 " + source + " 移动到 " + target + "<br>");
                 count++;
-                
-                // 将 n-1 个盘子从辅助柱移动到目标柱
                 hanoiTower(n - 1, auxiliary, source, target);
             }
         }
 
         function runHanoiTower() {
-            var n = 7; // 汉诺塔层数
-            var source = "A"; // 源柱
-            var auxiliary = "B"; // 辅助柱
-            var target = "C"; // 目标柱
+            var n = 7; 
+            var source = "A"; 
+            var auxiliary = "B";
+            var target = "C";
 
             hanoiTower(n, source, auxiliary, target);
 
