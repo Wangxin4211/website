@@ -1,0 +1,14 @@
+table tr td
+{
+   font-family:Comic Sans MS,cursive,sans-serif;
+   font-size:39px;
+   text-shadow:#121212
+}
+
+input
+{
+   font-family:Comic Sans MS,cursive,sans-serif;
+   font-size:39px;
+   font-weight:640;
+   padding:30px 20px 2px 20px
+}
