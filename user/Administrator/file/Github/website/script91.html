@@ -1,0 +1,15 @@
+<script>
+let a={id:2342343,name:"John Smith"};
+let b={};
+a["age"]=12;
+
+document.write(a["id"]+"<br>");
+document.write(a["name"]+"<br>");
+
+
+for(let key in b)
+document.write("key="+key+",value="+b[key]+"<br>");
+document.write(b.length);
+b["id"]=62321;
+delete b["id"];
+</script>
